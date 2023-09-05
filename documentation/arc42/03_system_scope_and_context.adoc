@@ -15,7 +15,7 @@
 include::../diagrams/SystemContext.puml[]
 ....
 
-**Legende**
+**Legend**
 [plantuml, format=png]   
 ....
 include::../diagrams/SystemContext-key.puml[]

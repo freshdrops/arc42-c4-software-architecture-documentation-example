@@ -6,7 +6,7 @@
 
 
 
-=== Internet Banking System
+=== System
 
 [plantuml, format=png]   
 ....
@@ -14,7 +14,7 @@ include::../diagrams/Containers.puml[]
 include::../diagrams/Containers-key.puml[]
 ....
 
-**Legende**
+**Legend**
 [plantuml, format=png]   
 ....
 include::../diagrams/Containers-key.puml[]
@@ -85,7 +85,7 @@ _<black box template>_
 include::../diagrams/Components.puml[]
 ....
 
-**Legende**
+**Legend**
 [plantuml, format=png]   
 ....
 include::../diagrams/Components-key.puml[]

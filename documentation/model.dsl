@@ -1,9 +1,3 @@
-/*
- * This is a combined version of the following workspaces:
- *
- * - "Big Bank plc - System Landscape" (https://structurizr.com/share/28201/)
- * - "Big Bank plc - Internet Banking System" (https://structurizr.com/share/36141/)
-*/
 workspace "Big Bank plc" "This is an example workspace to illustrate the key features of Structurizr, via the DSL, based around a fictional online banking system." {
 
     model {
@@ -17,12 +11,12 @@ workspace "Big Bank plc" "This is an example workspace to illustrate the key fea
             email = softwaresystem "E-mail System" "The internal Microsoft Exchange e-mail system." "Existing System"
             atm = softwaresystem "ATM" "Allows customers to withdraw cash." "Existing System"
 
-            internetBankingSystem = softwaresystem "Internet Banking System" "Allows customers to view information about their bank accounts, and make payments." {
+            internetBankingSystem = softwaresystem "System" "Allows customers to view information about their bank accounts, and make payments." {
                 singlePageApplication = container "Single-Page Application" "Provides all of the Internet banking functionality to customers via their web browser." "JavaScript and Angular" "Web Browser"
                 mobileApp = container "Mobile App" "Provides a limited subset of the Internet banking functionality to customers via their mobile device." "Xamarin" "Mobile App"
                 webApplication = container "Web Application" "Delivers the static content and the Internet banking single page application." "Java and Spring MVC"
                 apiApplication = container "API Application" "Provides Internet banking functionality via a JSON/HTTPS API." "Java and Spring MVC" {
-                    signinController = component "Sign In Controller" "Allows users to sign in to the Internet Banking System." "Spring MVC Rest Controller"
+                    signinController = component "Sign In Controller" "Allows users to sign in to the System." "Spring MVC Rest Controller"
                     accountsSummaryController = component "Accounts Summary Controller" "Provides customers with a summary of their bank accounts." "Spring MVC Rest Controller"
                     resetPasswordController = component "Reset Password Controller" "Allows users to reset their passwords with a single use URL." "Spring MVC Rest Controller"
                     securityComponent = component "Security Component" "Provides functionality related to signing in, changing passwords, etc." "Spring Bean"

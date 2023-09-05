@@ -9,4 +9,3 @@ documentation/images/diag-*.png
 .idea/
 .gradle/
 build/
-documentation/adrs/*.adoc

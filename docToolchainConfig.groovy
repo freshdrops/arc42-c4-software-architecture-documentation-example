@@ -13,7 +13,7 @@ docDir = System.getProperty('docDir')?:'.'
 // pdfThemeDir = './src/docs/pdfTheme'
 
 inputFiles = [
-        [file: 'internet-banking-system.adoc', formats: ['html','pdf']],
+        [file: 'index.adoc', formats: ['html','pdf']],
         /** inputFiles **/
 ]
 
@@ -462,7 +462,7 @@ structurizr.with {
 
         // By default `exportStructurizr` looks for a file '${structurizr.workspace.path}/workspace.dsl'
         // You can customize this behavior with 'filename'. Note that the workspace filename is provided without '.dsl' extension. 
-        filename = 'bank'
+        filename = 'model'
     }
 
     export = {
